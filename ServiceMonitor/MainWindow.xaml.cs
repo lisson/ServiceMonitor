@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ServiceMonitor.ViewModel;
+using ServiceMonitor.Model;
 
 namespace ServiceMonitor
 {
@@ -23,6 +25,7 @@ namespace ServiceMonitor
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new ServiceMonitorViewModel();
         }
     }
 }

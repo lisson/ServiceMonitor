@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Label Content="Service Status: " HorizontalAlignment="Left" Margin="105,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Service.Status, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="199,163,0,0" VerticalAlignment="Top" Width="198"/>
+
     </Grid>
 </Window>
